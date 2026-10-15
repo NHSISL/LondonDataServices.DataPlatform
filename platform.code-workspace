@@ -1,0 +1,19 @@
+{
+    "folders": [
+        { "name": "platform", "path": "." },
+        { "name": "platform-tooling", "path": "LondonDataServices.DataPlatformTooling" },
+        { "name": "olids-share", "path": "LondonDataServices.OLIDS_Share" },
+        { "name": "transform-olids-enrichment", "path": "LondonDataServices.Transform.OLIDS_Enrichment" },
+        { "name": "transform-emis-olids", "path": "LondonDataServices.Transform.EMIS_OLIDS" },
+        { "name": "transform-tpp-olids", "path": "LondonDataServices.Transform.TPP_OLIDS" }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder:platform}/.venv/bin/python"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "dbtlabsinc.dbt"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+[submodule "LondonDataServices.DataPlatformTooling"]
+	path = LondonDataServices.DataPlatformTooling
+	url = https://github.com/NHSISL/LondonDataServices.DataPlatformTooling.git
+	branch = main
