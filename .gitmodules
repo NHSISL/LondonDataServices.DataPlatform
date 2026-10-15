@@ -2,3 +2,19 @@
 	path = LondonDataServices.DataPlatformTooling
 	url = https://github.com/NHSISL/LondonDataServices.DataPlatformTooling.git
 	branch = main
+[submodule "LondonDataServices.OLIDS_Share"]
+	path = LondonDataServices.OLIDS_Share
+	url = https://github.com/NHSISL/LondonDataServices.OLIDS_Share.git
+	branch = main
+[submodule "LondonDataServices.Transform.OLIDS_Enrichment"]
+	path = LondonDataServices.Transform.OLIDS_Enrichment
+	url = https://github.com/NHSISL/LondonDataServices.Transform.OLIDS_Enrichment.git
+	branch = main
+[submodule "LondonDataServices.Transform.EMIS_OLIDS"]
+	path = LondonDataServices.Transform.EMIS_OLIDS
+	url = https://github.com/NHSISL/LondonDataServices.Transform.EMIS_OLIDS.git
+	branch = main
+[submodule "LondonDataServices.Transform.TPP_OLIDS"]
+	path = LondonDataServices.Transform.TPP_OLIDS
+	url = https://github.com/NHSISL/LondonDataServices.Transform.TPP_OLIDS.git
+	branch = main
