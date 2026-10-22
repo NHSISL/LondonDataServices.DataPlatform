@@ -8,12 +8,20 @@
         { "name": "transform-tpp-olids", "path": "LondonDataServices.Transform.TPP_OLIDS" }
     ],
     "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder:platform}/.venv/bin/python"
+        "python.defaultInterpreterPath": "${workspaceFolder:platform}/.venv/bin/python",
+        "dbt.dbtIntegration": "core",
+        "dbt.dbtMajorVersion": "v1",
+        "dbt.formatOnSave": true,
+        "dbt.lintFixOnSave": true,
+        "dbt.lsp.linter.enabled": true,
+        "search.defaultViewMode": "tree",
+        "scm.defaultViewMode": "tree"
     },
     "extensions": {
         "recommendations": [
             "ms-python.python",
-            "dbtlabsinc.dbt"
+            "dbtlabsinc.dbt",
+            "ms-vscode-remote.remote-containers"
         ]
     }
 }
