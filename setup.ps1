@@ -5,6 +5,16 @@ $ErrorActionPreference = "Stop"
 # Keep relative paths and Git commands anchored at the platform repository root.
 Push-Location $PSScriptRoot
 try {
+    # Refuse to update submodules while the repository or any submodule has
+    # staged, unstaged, or untracked changes. Never force a submodule checkout.
+    $WorkingTreeChanges = git status --porcelain --untracked-files=all --ignore-submodules=none
+    if ($LASTEXITCODE -ne 0) {
+        throw "Checking for local changes failed with exit code $LASTEXITCODE"
+    }
+    if ($WorkingTreeChanges) {
+        throw "Commit or stash local changes (including those inside submodules) before running setup. No submodules were updated."
+    }
+
     # Initialize every nested submodule, including on clones that skipped them.
     git submodule update --init --recursive
     if ($LASTEXITCODE -ne 0) {
